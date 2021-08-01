@@ -5,6 +5,7 @@
     --green: #15CDCB;
     --bg-dark: #212226;
     --light-grey: #E0DEDE;
+    --bg-grey: #2F3034;
     
     --menu-height: 75px;
 }
@@ -130,6 +131,41 @@ nav ul a svg{
 .about-me .img-container .line.green{
     transform: rotate(-3.3deg);
     color: var(--green);
+}
+
+.services{
+    text-align: center;
+    margin: 150px 0;
+    padding: 0 100px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.services .services-container .service-card{
+    max-width: 360px;
+    border: 1px solid black;
+    border-radius: 16px;
+    background: var(--bg-grey);
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.services .services-container .service-card img{
+    margin-bottom: 40px;
+    width: 90px;
+}
+
+.service-card + .service-card{
+    margin-left: 10px;
 }
 
 /* Responsividade */
