@@ -78,6 +78,7 @@ nav{
     padding: 0 100px;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 nav img{
@@ -113,17 +114,18 @@ nav ul a svg{
     position: relative;
 }
 .about-me .img-container img{
-    width: 60%;
+    width: 50%;
     height: 100%;
+    object-fit: cover;
 }
 
 .about-me .img-container .line{
-    width: calc(60% + 50px);
+    width: calc(50% + 50px);
     height: calc(100% + 50px);
     border: 1px solid var(--purple);
     position: absolute;
     top: -25px;
-    left: calc(50% - 60%/2 - 25px);
+    left: calc(50% - 50%/2 - 25px);
 }
 .about-me .img-container .line.green{
     transform: rotate(-3.3deg);
@@ -141,6 +143,18 @@ nav ul a svg{
     }
     nav {
         padding: 0 30px;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .about-me .container, .about-me .img-container{
+        width: 100%;
+    }
+    .about-me .container{
+        padding-right: 0;
+    }
+    .about-me .img-container{
+        margin: 70px 0;
     }
 }
 /* tablet */
@@ -166,7 +180,7 @@ nav ul a svg{
 /* celular */
 @media (max-width: 480px){
     header .container{
-        padding: o 40px;
+        padding: 0 40px;
     }
     nav {
         position: fixed;
@@ -181,5 +195,8 @@ nav ul a svg{
     nav ul a svg{
         display: block;
         margin: 0 auto 10px;
+    }
+    .about-me{
+        padding: 40px;
     }
 }
