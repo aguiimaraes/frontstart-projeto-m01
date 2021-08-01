@@ -37,7 +37,7 @@ button{
     background: var(--purple);
     border: 0;
     border-radius: 16px;
-    padding: 8px 35px;
+    padding: 7px 35px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -139,6 +139,10 @@ section{
         padding: o 40px;
     }
     nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
         padding: 0 15px;
     }
     nav ul a {
